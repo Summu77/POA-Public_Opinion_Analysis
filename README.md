@@ -1,12 +1,15 @@
 # public-opinion-analysis
-Wuhan University Public Opinion Analysis Group Assignment
+Wuhan University Public Opinion Analysis Group Assignment (NS YXR FJL WCX)
 
-2023年11月22日13:36:35
-- 爬取了bbc中文两岸频道的所有新闻，筛选出包含“中”“美”的新闻，提取其内容，存至bbc.xlsx (90+)
+### 快速开始
+我们提供两种快速开始的方式：
+- 方式一：直接访问我们提供的在线平台 http://172.28.6.61:8501/ （目前仅支持武汉大学学生使用，若网站失效请与我们联系）
+- 方式二：分别配置模型一和模型二的环境后，运行我们提供的脚本文件 webui.sh
 
-2023年11月22日21:09:36
-- 爬取了纽约时报中文的所有新闻，筛选出包含“中”“美”的新闻，提取梗概（自带摘要但是很短的样子），存至nytimes.xlsx (2700+)
+### 模型原理与效果
+  请见我们的实验报告
 
 ### 参考文献
 - A New Direction in Stance Detection Target-Stance Extraction in the Wild
 - Unified Named Entity Recognition as Word-Word Relation Classification
+- ...（补充中）
