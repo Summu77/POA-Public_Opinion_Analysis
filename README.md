@@ -1,10 +1,11 @@
 # public-opinion-analysis
-Wuhan University Public Opinion Analysis Group Assignment (NS YXR FJL WCX)
-
+- Wuhan University Public Opinion Analysis Group Assignment (NS YXR FJL WCX)
+- 中美关系主题下的实体立场检测
+  
 ### 快速开始
 我们提供两种快速开始的方式：
 - 方式一：直接访问我们提供的在线平台 http://172.28.6.61:8501/ （目前仅支持武汉大学学生使用，若网站失效请与我们联系）
-- 方式二：分别配置模型一和模型二的环境后，运行我们提供的脚本文件 webui.sh
+- 方式二：分别配置模型一和模型二的环境后，运行我们提供的脚本文件 webui.sh（位于connect文件夹下）
 
 ### 数据集
   我们提供已经标注好的数据集4000+供学习交流使用，请见data.zip
