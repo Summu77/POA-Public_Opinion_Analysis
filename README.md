@@ -7,6 +7,15 @@
 - 方式一：直接访问我们提供的在线平台 http://172.28.6.61:8501/ （目前仅支持武汉大学学生使用，若网站失效请与我们联系）
 - 方式二：分别配置模型一和模型二的环境后，运行我们提供的脚本文件 webui.sh（位于connect文件夹下）
 
+### Requirement
+- python 3.6/3.7
+- pytorch >= 0.4.0
+- transformers
+- sklearn
+
+使用`pip install -r requirements.txt`下载依赖库，如果是rtx30x及以上系列显卡使用`pip install -r requirements_rtx30.txt`下载
+
+
 ### 数据集
   我们提供已经标注好的数据集4000+供学习交流使用，请见data.zip
   该数据集收集自纽约时报中文、BBC中文、路透社等国外知名平台
