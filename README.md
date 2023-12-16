@@ -8,6 +8,8 @@
 - 方式一：直接访问我们提供的在线平台 http://172.28.6.61:8501/ （目前仅支持武汉大学学生使用，若网站失效请与我们联系）
 - 方式二：分别配置模型一和模型二的环境后，运行我们提供的脚本文件 webui.sh（位于connect文件夹下）；其中模型一放置于./W2NER下模型二放置于./opinion-analysis下。
 
+## Model1
+
 ### Requirement-Model1
 - python (3.8.12)
 - cuda (11.4)
@@ -19,6 +21,17 @@
 - scikit-learn (1.0.1)
 - prettytable (2.4.0)
 
+对于NER任务的模型W2NER，需手动下载[bert-base-chinese](https://huggingface.co/bert-base-chinese)模型放置于./cache/bert-base-chinese文件夹下。
+
+### 数据集
+
+将格式处理后的数据集放置在./data/news文件夹下
+
+### 开始训练
+在模型一项目文件夹下运行`python main.py --config ./config/news.json`开始训练
+
+## Model2
+
 ### Requirement-Model2
 - python 3.6/3.7
 - pytorch >= 0.4.0
@@ -28,8 +41,6 @@
 使用`pip install -r requirements.txt`下载依赖库，如果是rtx30x及以上系列显卡使用`pip install -r requirements_rtx30.txt`下载环境
 
 ### 手动下载预训练模型
-对于NER任务的模型W2NER，需手动下载[bert-base-chinese](https://huggingface.co/bert-base-chinese)模型放置于./cache/bert-base-chinese文件夹下。
-
 对于模型二，代码使用transformer自动下载bert和spacy预训练模型，如果产生http或ssl错误，则从此处[bert-base-chinese](https://huggingface.co/bert-base-chinese)手动下载预训练模型并在infer_example.py中
 修改读取预训练模型的路径到本地路径。在新的数据集上训练也需在此处下载模型[zh_core_web_sm](https://spacy.io/models/zh)
 
