@@ -17,6 +17,8 @@
 使用`pip install -r requirements.txt`下载依赖库，如果是rtx30x及以上系列显卡使用`pip install -r requirements_rtx30.txt`下载环境
 
 ### 手动下载预训练模型
+对于NER任务的模型W2NER，需手动下载[bert-base-chinese](https://huggingface.co/bert-base-chinese)模型放置于./cache/bert-base-chinese文件夹下。
+
 代码使用transformer自动下载bert和spacy预训练模型，如果产生http或ssl错误，则从此处[bert-base-chinese](https://huggingface.co/bert-base-chinese)手动下载预训练模型并在infer_example.py中
 修改读取预训练模型的路径到本地路径。在新的数据集上训练也需在此处下载模型[zh_core_web_sm](https://spacy.io/models/zh)
 
