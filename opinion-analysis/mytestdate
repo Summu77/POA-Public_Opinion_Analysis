@@ -1,0 +1,13 @@
+def extract_aspects_from_indices(text, aspect_indices):
+    aspects = [text[start:end+1] for start, end in aspect_indices]
+    return aspects
+
+# 示例数据
+text = "首届中国-中亚峰会在西安开幕。习近平寻求加深在中亚的影响力，进而提升全球地位。北京希望加强与志同道合国家的关系，对抗美国主导的世界秩序。"
+aspect_indices = [[10, 11], [15, 17], [23, 24]]
+
+# 从文本中提取方面词
+aspects = extract_aspects_from_indices(text, aspect_indices)
+
+# 输出结果
+print(aspects)
