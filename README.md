@@ -6,7 +6,18 @@
 ### 快速开始
 我们提供两种快速开始的方式：
 - 方式一：直接访问我们提供的在线平台 http://172.28.6.61:8501/ （目前仅支持武汉大学学生使用，若网站失效请与我们联系）
-- 方式二：分别配置模型一和模型二的环境后，运行我们提供的脚本文件 webui.sh（位于connect文件夹下）
+- 方式二：分别配置模型一和模型二的环境后，运行我们提供的脚本文件 webui.sh（位于connect文件夹下）；其中模型一放置于./W2NER下模型二放置于./opinion-analysis下。
+
+### Requirement-Model1
+- python (3.8.12)
+- cuda (11.4)
+- numpy (1.21.4)
+- torch (1.10.0)
+- gensim (4.1.2)
+- transformers (4.13.0)
+- pandas (1.3.4)
+- scikit-learn (1.0.1)
+- prettytable (2.4.0)
 
 ### Requirement-Model2
 - python 3.6/3.7
@@ -19,7 +30,7 @@
 ### 手动下载预训练模型
 对于NER任务的模型W2NER，需手动下载[bert-base-chinese](https://huggingface.co/bert-base-chinese)模型放置于./cache/bert-base-chinese文件夹下。
 
-代码使用transformer自动下载bert和spacy预训练模型，如果产生http或ssl错误，则从此处[bert-base-chinese](https://huggingface.co/bert-base-chinese)手动下载预训练模型并在infer_example.py中
+对于模型二，代码使用transformer自动下载bert和spacy预训练模型，如果产生http或ssl错误，则从此处[bert-base-chinese](https://huggingface.co/bert-base-chinese)手动下载预训练模型并在infer_example.py中
 修改读取预训练模型的路径到本地路径。在新的数据集上训练也需在此处下载模型[zh_core_web_sm](https://spacy.io/models/zh)
 
 ### 重新训练
