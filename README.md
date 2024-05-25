@@ -6,11 +6,9 @@ SCHOOL OF CYBER SCIENCE AND ENGINEERING-WHU
 
 The following are the original requirements for the experiment:
 
-Task 2: Entity-Position Analysis
-
 l **Description**
 
-Analyze the position of each entity for all the entities that appear in the data.
+Task 2: Entity-Position Analysis, Analyze the position of each entity for all the entities that appear in the data.
 
 l **Data**
 
